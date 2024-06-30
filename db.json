@@ -1,0 +1,35 @@
+{
+  "sections": [
+    {
+      "title": "Item 1",
+      "priority": "Low",
+      "createdAt": "2024-06-11"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Item 1",
+      "description": "Description 1",
+      "priority": "Low",
+      "dueDate": "2023-07-10",
+      "createdAt": "2023-06-01",
+      "completed": "false"
+    },
+    {
+      "id": "426f",
+      "title": "fsdf",
+      "description": "jhjh",
+      "dueDate": "2024-07-02",
+      "priority": "Normal",
+      "createdAt": "2024-06-30T18:37:29.281Z"
+    },
+    {
+      "id": "93f0",
+      "title": "d1",
+      "description": "d1 des",
+      "dueDate": "2024-07-03",
+      "priority": "High",
+      "createdAt": "2024-06-30T18:38:11.629Z"
+    }
+  ]
+}

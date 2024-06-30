@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <h2>{{ editIndex !== null ? 'Edit Item' : 'Add New Item' }}</h2>
+    <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" placeholder="Add the section title" id="title" class="form-control" formControlName="title">
+            <p class="pt-1" style="color: red;" *ngIf="itemForm.get('title')?.touched && itemForm.get('title')?.invalid">
+                Please enter the title field
+             </p>
+        </div>
+        <div class="form-group">
+            <label for="priority">Priority</label>
+            <select id="priority"  name="priority" class="form-control" placeholder="Select priority" formControlName="priority" required>
+                <option *ngFor="let priority of priorities"  [value]="priority">{{priority}}</option>
+            </select>
+            <p class="pt-1" style="color: red;" *ngIf="itemForm.get('priority')?.touched && itemForm.get('priority')?.invalid">
+                Please fill the priority field
+             </p>
+            <!-- <ng-select id="priority" [items]="priorities" bindLabel="name" bindValue="id" formControlName="priority" class="form-control"></ng-select> -->
+        </div>
+        <button type="submit" class="btn btn-primary">{{ editIndex !== null ? 'Update' : 'Submit' }}</button>
+        <button type="submit" (click)="closeModal()" class="btn btn-primary ml-3">Close</button>
+    </form>
+</div>

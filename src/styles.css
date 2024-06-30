@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+/* Correct CSS Syntax Example */
+
+/* At-rule for importing Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import 'ngx-toastr/toastr';
+
+/* Selector with CSS rules */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heading styles */
+h2 {
+  color: #333;
+}
+
+span {
+    color: #333;
+}
+
+/* Form validation styles */
+.needs-validation .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.needs-validation .form-control:valid {
+  border-color: #28a745;
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.needs-validation .form-control:invalid + .invalid-feedback {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* CSS for hover effect and button styling */
+/* .list-item:hover .actions {
+    visibility: visible;
+}
+
+.priority-text {
+    display: inline-block; 
+    min-width: 50px;
+} */
+
+/* .actions {
+    visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.edit-btn, .delete-btn {
+    margin-right: 5px;
+}
+
+.list-item:hover .actions .action-buttons {
+    visibility: visible;
+}
+
+.actions .action-buttons {
+    visibility: hidden;
+} */
+
+
+/* Custom styles for toastr */
+.toast-success-custom {
+    background-color: #28a745 !important; /* Green for success */
+    color: white !important;
+  }
+  
+  .toast-error-custom {
+    background-color: #dc3545 !important; /* Red for error */
+    color: white !important;
+  }
+
+  /* responsive */
+
+  /* section-form.component.css */
+.container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  
+    .form-group label {
+      font-size: 1rem;
+    }
+  
+    .form-control {
+      font-size: 0.875rem;
+    }
+  
+    .btn {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 1rem;
+    }
+  
+    .form-group {
+      margin-bottom: 0.75rem;
+    }
+  
+    .btn {
+      width: 100%;
+      margin-bottom: 0.75rem;
+    }
+  
+    .btn:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /* section-form.component.css */
+  
+  
+  
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.translate-middle-x {
+    transform: translateX(-100%);
+  }
+  

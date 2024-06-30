@@ -1,0 +1,34 @@
+
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+    <h2 class="d-flex justify-content-between">List of Items
+      <button type="button" (click)="addSection()" class="btn btn-sm btn-success add-btn">
+        <i class="bi bi-plus"></i> Add
+      </button>
+    </h2>
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th width="70%">Title</th>
+          <th width="30%">Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let i=index" class="list-item">
+          <td>{{ item.title }}</td>
+          <td class="priority-column">
+            {{ item.priority }}
+            <div class="action-buttons d-flex justify-content-around">
+              <button type="button" (click)="editSection(i)" class="btn btn-sm btn-primary edit-btn">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button type="button" (click)="deleteSection(i)" class="btn btn-sm btn-danger delete-btn">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

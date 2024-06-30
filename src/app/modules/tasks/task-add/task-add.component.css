@@ -1,0 +1,17 @@
+.w-full {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  
+    .form-group {
+      margin-bottom: 1rem;
+  
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+  
